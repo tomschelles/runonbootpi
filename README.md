@@ -22,14 +22,14 @@ sudo chmod 775 start.sh
 ```
 sudo crontab -e
 ```
-4. Add the following line to the crontab
-```
-@reboot sudo sh /home/pi/start.sh >/home/pi/logs/cronlog 2>&1
-```
-5. Make a log file to catch all the errors
+4. Make a log file to catch all the errors
 ```
 mkdir logs
 chmod 775 logs
+```
+5. Add the following line to the crontab
+```
+@reboot sudo sh /home/pi/start.sh >/home/pi/logs/cronlog 2>&1
 ```
 6. Now reboot
 ```
