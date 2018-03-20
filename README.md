@@ -14,6 +14,8 @@ cd home/pi/
 sudo python program.py &
 cd /
 ```
+sleep 10 is needed to load system respos first
+
 2. Change rights to 775
 ```
 sudo chmod 775 start.sh
